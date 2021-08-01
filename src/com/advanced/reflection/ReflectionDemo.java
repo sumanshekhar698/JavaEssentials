@@ -20,6 +20,7 @@ public class ReflectionDemo {
 			 * (although using it still has all the problems that made the JDK developers
 			 * deprecate it in 9
 			 */
+//			https://docs.oracle.com/javase/9/docs/api/java/lang/Class.html#newInstance--
 
 			Method declaredDisplayMethod = student.getDeclaredMethod("display", null);// fetching the specific method
 			// Still the method is unavailable as its private
