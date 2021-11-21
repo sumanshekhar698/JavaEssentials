@@ -20,4 +20,7 @@ public class ArrayDeclaration {
     // Inserting the Elements
     hm1.put(new Integer(1), "Geeks");
 	}
+
+	
+	
 }

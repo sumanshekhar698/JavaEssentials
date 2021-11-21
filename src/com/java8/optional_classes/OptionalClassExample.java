@@ -1,4 +1,4 @@
-package com.java8.concepts.optional_classes;
+package com.java8.optional_classes;
 
 import java.util.Optional;
 
@@ -8,7 +8,7 @@ public class OptionalClassExample {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String str = "Suman";
+		String str = "Nemesis";
 		str = null;
 
 		if (str == null)
@@ -21,16 +21,17 @@ public class OptionalClassExample {
 		 */
 
 		Optional<String> optional = Optional.ofNullable(str);
-		System.out.println(optional.isPresent());
-//		System.out.println(optional.get());
-		System.out.println(optional.orElse("No value in the object"));
+		System.out.println(optional.isPresent());// false
+		// System.out.println(optional.get());//Exception as optional is empty
+		System.out.println(optional.orElse("No value in the object"));// No value in the object
+
 		Optional<String> name = getName();// name returned is not a String rather its an optional
-		System.out.println(name.orElse("null returned"));
+		System.out.println(name.orElse("null returned"));// Realm
 
 	}
 
 	public static Optional<String> getName() {
-		String name = "Shekhar";
+		String name = "Realm";
 		return Optional.ofNullable(name);
 	}
 }
